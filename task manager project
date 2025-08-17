@@ -1,0 +1,28 @@
+# Navigate to your project folder
+cd path/to/task_manager
+
+# Initialize git
+git init
+
+# Create a .gitignore file
+echo "__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+tasks.json" > .gitignore
+
+# Add all files to staging
+git add .
+
+# Commit with a descriptive message
+git commit -m "Initial commit: Add Task Manager CLI with JSON storage and CLI interface"
+
+# Link to your GitHub repository (replace with your repo URL)
+git remote add origin https://github.com/your-username/your-repo.git
+
+# Set main as the default branch
+git branch -M main
+
+# Push all commits to GitHub
+git push -u origin main
